@@ -1,0 +1,13 @@
+class Solution{
+    public:
+        long long sumUnderModulo(long long a,long long b)
+    {
+        // code here
+        
+        long long mod=1000000007;
+        
+        a=a%mod;
+        b=b%mod;
+        return ((a+b)%mod);
+    }
+};
