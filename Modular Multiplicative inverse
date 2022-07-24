@@ -1,0 +1,18 @@
+class Solution{
+    public:
+    //Complete this function
+    int modInverse(int a, int m)
+    {
+        //Your code here
+         int i;
+       for(i = 0; i < m; i++){
+           if((i*a)%m == 1){
+               break;
+           }
+       }
+       if(i >= m){
+           return -1;
+       }
+       return i;
+   }
+};
