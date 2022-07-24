@@ -1,0 +1,26 @@
+class Solution{
+    public:
+    
+      bool Prime(int N)
+   {
+        //Your code here
+      if(N<=1)
+          return false;
+      
+      for(int i=2;i<=sqrt(N);i++)
+          if(N%i==0)
+              return false;
+      
+      return true ;
+   }
+   int exactly3Divisors(int N)
+   {
+      int div =0;
+      for(int i = 2; i <= sqrt(N); i++ ){
+        
+           if(Prime(i))
+           div++;
+       }
+        return div;
+   }
+};
