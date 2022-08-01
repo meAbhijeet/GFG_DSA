@@ -1,0 +1,16 @@
+int c=0;
+       while(m>0 || n>0){
+           int mlsb =( m&1);
+           int nlsb = (n&1);
+           if((mlsb ^ nlsb) ==0)  
+           {
+           c++;
+           }
+           else
+           {return c+1;
+           }
+           m=m>>1;
+           n=n>>1;
+       }
+       return -1; 
+
