@@ -1,0 +1,17 @@
+ int minAdjDiff(int arr[], int n){    
+        // Your code here
+        int min= abs(arr[n-1]-arr[0]);
+        int check=0;
+        
+        for(int i=0;i<n;i++)
+        {
+            check=abs(arr[i+1]-arr[i]);
+            if(check<min)
+            {
+                min =check;
+            }
+        }
+        
+        return min;
+        
+     }
